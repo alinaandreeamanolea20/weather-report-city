@@ -1,4 +1,4 @@
-# create a weather report for the current day (& hour) for a city (Bucharest, Timisoara, Oradea, Suceava, Brasov)
+# create a weather report for the current day (& hour) for a city (Bucharest, Rome, ...)
 # you can use the API from https://www.weatherbit.io/
 # url for current day: https://api.weatherbit.io/v2.0/current
 # params: city and key; for key you can use mine 1ab5e9499298416b97674b2facdaeb1c or make a free account on the site
@@ -21,6 +21,6 @@ def print_weather(city):
     print('Description: ' + data['weather']['description'])
     print('Temperature: ' + str(data['temp']) + 'C')
 
-print_weather('Roma,IT')
+print_weather('Rome,IT')
 print_weather('Bucharest,RO')
 print_weather('Paris,FR')
